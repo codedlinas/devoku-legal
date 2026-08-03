@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Processing Addendum - Devoku</title>
+  <meta name="description" content="Data Processing Addendum for the Devoku application and hosted service.">
+  <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+  line-height: 1.7; color: #e2e8f0; background: #0a0e1a;
+  -webkit-font-smoothing: antialiased;
+}
+.container { max-width: 720px; margin: 0 auto; padding: 60px 24px 80px; }
+nav { border-bottom: 1px solid #1e293b; padding: 16px 24px; background: #0f1629; }
+nav a { color: #e2e8f0; text-decoration: none; font-weight: 600; font-size: 15px; }
+nav a:hover { color: #60a5fa; }
+.breadcrumb { color: #64748b; font-size: 13px; margin-top: 4px; }
+.breadcrumb a { color: #60a5fa; font-weight: 400; font-size: 13px; }
+h1 { font-size: 32px; font-weight: 700; margin-bottom: 8px; letter-spacing: -0.5px; color: #f8fafc; }
+.subtitle { color: #94a3b8; font-size: 14px; margin-bottom: 40px; }
+h2 { font-size: 20px; font-weight: 600; margin-top: 36px; margin-bottom: 12px; color: #f1f5f9; }
+h3 { font-size: 16px; font-weight: 600; margin-top: 24px; margin-bottom: 8px; color: #f1f5f9; }
+p { margin-bottom: 16px; color: #cbd5e1; font-size: 15px; }
+ul, ol { margin-bottom: 16px; padding-left: 24px; }
+li { margin-bottom: 8px; color: #cbd5e1; font-size: 15px; }
+li strong, p strong { color: #f1f5f9; }
+a { color: #60a5fa; text-decoration: none; }
+a:hover { text-decoration: underline; }
+blockquote {
+  border-left: 3px solid #334155; padding: 8px 16px; margin: 0 0 16px;
+  color: #94a3b8; background: #111827; border-radius: 0 8px 8px 0;
+}
+blockquote p { margin-bottom: 8px; color: #94a3b8; }
+blockquote p:last-child { margin-bottom: 0; }
+table { width: 100%; border-collapse: collapse; margin-bottom: 20px; font-size: 14px; }
+th, td { border: 1px solid #1e293b; padding: 10px 12px; text-align: left; vertical-align: top; }
+th { background: #111827; color: #f1f5f9; font-weight: 600; }
+td { color: #cbd5e1; }
+code { background: #111827; padding: 1px 6px; border-radius: 4px; font-size: 13px; color: #93c5fd; }
+hr { border: none; border-top: 1px solid #1e293b; margin: 32px 0; }
+.card {
+  display: block; padding: 20px 24px; margin-bottom: 12px;
+  border: 1px solid #1e293b; border-radius: 12px; background: #111827;
+  text-decoration: none; color: #e2e8f0;
+  transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+}
+.card:hover { border-color: #3b82f6; box-shadow: 0 2px 12px rgba(59,130,246,0.15); text-decoration: none; background: #151d30; }
+.card h3 { font-size: 16px; font-weight: 600; margin: 0 0 4px; color: #f1f5f9; }
+.card p { font-size: 13px; color: #94a3b8; margin-bottom: 0; }
+.footer { margin-top: 60px; padding-top: 24px; border-top: 1px solid #1e293b; color: #64748b; font-size: 13px; }
+</style>
+</head>
+<body>
+  <nav>
+    <a href="/">Devoku Legal</a>
+    <div class="breadcrumb"><a href="/">Home</a> / Devoku / DPA</div>
+  </nav>
+  <div class="container">
+    <h1>Data Processing Addendum</h1>
+    <p class="subtitle">Devoku · Last updated: August 3, 2026</p>
+    <p><strong>TEMPLATE STUB — NOT LEGAL ADVICE, NOT READY TO SIGN.</strong> This is a skeleton to give<br />
+    counsel a starting point. A DPA is a binding contract and must be completed and<br />
+    reviewed by a qualified lawyer (and aligned with your sub-processors' own DPAs and<br />
+    Standard Contractual Clauses) before use. The codebase's own compliance notes<br />
+    (P6) list the DPA template as outstanding work.</p>
+    <p><strong>Effective date:</strong> <code>August 3, 2026</code><br />
+    <strong>Version:</strong> <code>privacy-policy-2026-08-03</code></p>
+    <p>This Data Processing Addendum ("<strong>DPA</strong>") forms part of the<br />
+    <a href="/terms/">Terms of Service</a> between <code>Coded, UAB</code><br />
+    ("<strong>Devoku</strong>", "<strong>Processor</strong>") and the customer accepting it ("<strong>Customer</strong>",<br />
+    "<strong>Controller</strong>"), and applies where Devoku processes Personal Data on the Customer's<br />
+    behalf in connection with the managed Devoku Cloud service.</p>
+    <hr />
+    <h2>1. Definitions</h2>
+    <p>Terms such as "Personal Data", "Processing", "Controller", "Processor",<br />
+    "Sub-processor", "Data Subject", and "Supervisory Authority" have the meanings given<br />
+    in the EU General Data Protection Regulation (GDPR) 2016/679 and, where applicable, the<br />
+    UK GDPR. [pending: define any additional terms and referenced laws, e.g. CCPA]</p>
+    <h2>2. Roles and scope of processing</h2>
+    <ul>
+    <li>Customer is the <strong>Controller</strong> and Devoku is the <strong>Processor</strong> for Personal Data<br />
+      processed under the Service.</li>
+    <li><strong>Subject matter:</strong> provision of the Devoku Cloud service.</li>
+    <li><strong>Duration:</strong> the term of the Terms of Service, plus applicable retention.</li>
+    <li><strong>Nature and purpose:</strong> hosting, storage, transmission, orchestration of AI agents,<br />
+      transcription, notification delivery, and related operations.</li>
+    <li><strong>Types of Personal Data:</strong> [pending: confirm — account identifiers, content<br />
+      submitted to the Service, usage/diagnostic data, etc.]</li>
+    <li><strong>Categories of Data Subjects:</strong> [pending: e.g. Customer's users, end users,<br />
+      personnel]<br />
+      (See Annex 1.)</li>
+    </ul>
+    <h2>3. Processor obligations</h2>
+    <p>Devoku shall:<br />
+    1. process Personal Data only on documented instructions from the Controller, including<br />
+       as set out in the Terms and this DPA;<br />
+    2. ensure persons authorized to process Personal Data are bound by confidentiality;<br />
+    3. implement appropriate technical and organizational measures (Annex 2);<br />
+    4. respect the conditions for engaging Sub-processors (Section 4);<br />
+    5. assist the Controller, taking into account the nature of processing, with data-subject<br />
+       requests and with Articles 32–36 GDPR obligations;<br />
+    6. at the Controller's choice, delete or return Personal Data at the end of the services<br />
+       (subject to legally required retention); and<br />
+    7. make available information necessary to demonstrate compliance and allow for audits<br />
+       [pending: define audit scope, frequency, and cost allocation].</p>
+    <h2>4. Sub-processors</h2>
+    <ul>
+    <li>The Controller provides <strong>general authorization</strong> for Devoku to engage Sub-processors,<br />
+      listed in <a href="/subprocessors/"><code>subprocessors.md</code></a>, published at<br />
+    <code>https://legal.devoku.com/subprocessors/</code>, and summarized in the<br />
+    <a href="/privacy/">Privacy Policy</a> (e.g. Hetzner, UpCloud, Cloudflare, Soniox, Voyage<br />
+      AI, Resend, APNs/FCM, <code>Stripe</code>, and enabled AI providers).<br />
+      (Identity is handled by self-hosted Ory Kratos software, not a third-party processor.)</li>
+    <li>Devoku will impose data-protection obligations on Sub-processors substantially similar<br />
+      to those in this DPA and remains liable for their performance.</li>
+    <li>Devoku will give notice of intended additions or replacements of Sub-processors,<br />
+      allowing the Controller to object [pending: notice period and objection process].</li>
+    </ul>
+    <h2>5. International transfers</h2>
+    <p>Where processing involves transfers of Personal Data outside the EEA/UK, the parties will<br />
+    rely on an approved transfer mechanism, such as the EU <strong>Standard Contractual Clauses</strong><br />
+    and the UK Addendum, incorporated by reference [pending: attach/module selection].</p>
+    <h2>6. Security</h2>
+    <p>Devoku maintains the technical and organizational measures described in Annex 2,<br />
+    including encryption in transit, access controls, secret management, hashed credentials,<br />
+    optional two-factor authentication, and audit logging.</p>
+    <h2>7. Personal data breaches</h2>
+    <p>Devoku will notify the Controller <strong>without undue delay</strong> after becoming aware of a<br />
+    Personal Data breach affecting the Controller's data, and will provide information<br />
+    reasonably available to assist the Controller's own obligations<br />
+    [pending: notification timeframe/target, e.g. within 72 hours].</p>
+    <h2>8. Data-subject requests</h2>
+    <p>Devoku will assist the Controller in responding to data-subject requests, including via<br />
+    the Service's built-in export and deletion tools (<code>/api/v1/me/export</code>,<br />
+    <code>/api/v1/me/delete</code>) and consent controls.</p>
+    <h2>9. Deletion and return</h2>
+    <p>On termination, Devoku will delete or anonymize Personal Data as described in the<br />
+    <a href="/privacy/">Privacy Policy</a>, subject to legally required retention of billing and<br />
+    audit records for <code>up to 7 years for billing and tax records where required; otherwise only as needed for legal, security, and fraud-prevention purposes</code>.</p>
+    <h2>10. Liability and order of precedence</h2>
+    <p>Liability under this DPA is subject to the limitations in the Terms of Service. In case of<br />
+    conflict regarding Personal Data processing, this DPA prevails over the Terms<br />
+    [pending: confirm precedence].`</p>
+    <hr />
+    <h2>Annex 1 — Details of processing</h2>
+    <p>[pending: categories of data subjects, types of personal data, special categories (if<br />
+    any), processing operations, duration.]</p>
+    <h2>Annex 2 — Technical and organizational measures</h2>
+    <p>[pending: detailed security measures — encryption, access control, logging, backups,<br />
+    network security, personnel, incident response, vendor management.]</p>
+    <h2>Annex 3 — Approved sub-processors</h2>
+    <p>[pending: current sub-processor list with entity, purpose, and location; keep in sync<br />
+    with the Privacy Policy and SUBPROCESSOR_LIST_URL.]</p>
+    <hr />
+    <p><strong>Signatures</strong><br />
+    [pending: signature blocks for Controller and Processor, or click-through acceptance<br />
+    mechanism.]</p>
+    <div class="footer">
+      <p>&copy; 2026 Coded, UAB. All rights reserved.</p>
+      <p style="margin-top:8px"><a href="/">Legal home</a> · <a href="mailto:support@devoku.com">support@devoku.com</a></p>
+    </div>
+  </div>
+</body>
+</html>

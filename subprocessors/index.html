@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sub-processors - Devoku</title>
+  <meta name="description" content="Sub-processors for the Devoku application and hosted service.">
+  <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+  line-height: 1.7; color: #e2e8f0; background: #0a0e1a;
+  -webkit-font-smoothing: antialiased;
+}
+.container { max-width: 720px; margin: 0 auto; padding: 60px 24px 80px; }
+nav { border-bottom: 1px solid #1e293b; padding: 16px 24px; background: #0f1629; }
+nav a { color: #e2e8f0; text-decoration: none; font-weight: 600; font-size: 15px; }
+nav a:hover { color: #60a5fa; }
+.breadcrumb { color: #64748b; font-size: 13px; margin-top: 4px; }
+.breadcrumb a { color: #60a5fa; font-weight: 400; font-size: 13px; }
+h1 { font-size: 32px; font-weight: 700; margin-bottom: 8px; letter-spacing: -0.5px; color: #f8fafc; }
+.subtitle { color: #94a3b8; font-size: 14px; margin-bottom: 40px; }
+h2 { font-size: 20px; font-weight: 600; margin-top: 36px; margin-bottom: 12px; color: #f1f5f9; }
+h3 { font-size: 16px; font-weight: 600; margin-top: 24px; margin-bottom: 8px; color: #f1f5f9; }
+p { margin-bottom: 16px; color: #cbd5e1; font-size: 15px; }
+ul, ol { margin-bottom: 16px; padding-left: 24px; }
+li { margin-bottom: 8px; color: #cbd5e1; font-size: 15px; }
+li strong, p strong { color: #f1f5f9; }
+a { color: #60a5fa; text-decoration: none; }
+a:hover { text-decoration: underline; }
+blockquote {
+  border-left: 3px solid #334155; padding: 8px 16px; margin: 0 0 16px;
+  color: #94a3b8; background: #111827; border-radius: 0 8px 8px 0;
+}
+blockquote p { margin-bottom: 8px; color: #94a3b8; }
+blockquote p:last-child { margin-bottom: 0; }
+table { width: 100%; border-collapse: collapse; margin-bottom: 20px; font-size: 14px; }
+th, td { border: 1px solid #1e293b; padding: 10px 12px; text-align: left; vertical-align: top; }
+th { background: #111827; color: #f1f5f9; font-weight: 600; }
+td { color: #cbd5e1; }
+code { background: #111827; padding: 1px 6px; border-radius: 4px; font-size: 13px; color: #93c5fd; }
+hr { border: none; border-top: 1px solid #1e293b; margin: 32px 0; }
+.card {
+  display: block; padding: 20px 24px; margin-bottom: 12px;
+  border: 1px solid #1e293b; border-radius: 12px; background: #111827;
+  text-decoration: none; color: #e2e8f0;
+  transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+}
+.card:hover { border-color: #3b82f6; box-shadow: 0 2px 12px rgba(59,130,246,0.15); text-decoration: none; background: #151d30; }
+.card h3 { font-size: 16px; font-weight: 600; margin: 0 0 4px; color: #f1f5f9; }
+.card p { font-size: 13px; color: #94a3b8; margin-bottom: 0; }
+.footer { margin-top: 60px; padding-top: 24px; border-top: 1px solid #1e293b; color: #64748b; font-size: 13px; }
+</style>
+</head>
+<body>
+  <nav>
+    <a href="/">Devoku Legal</a>
+    <div class="breadcrumb"><a href="/">Home</a> / Devoku / Sub-processors</div>
+  </nav>
+  <div class="container">
+    <h1>Sub-processors</h1>
+    <p class="subtitle">Devoku · Last updated: August 3, 2026</p>
+    <p>This page lists the third-party service providers ("sub-processors") that<br />
+    <code>Coded, UAB</code> uses to provide the managed <strong>Devoku Cloud</strong><br />
+    service, and the data they may process. It is referenced by the<br />
+    <a href="/privacy/">Privacy Policy</a> and the<br />
+    <code>https://legal.devoku.com/subprocessors/</code>.</p>
+    <p><strong>Last updated:</strong> <code>August 3, 2026</code></p>
+    <blockquote>
+    <p>Self-hosted and local-only deployments do not use Devoku-operated sub-processors<br />
+    except those you configure yourself.</p>
+    </blockquote>
+    <h2>Infrastructure sub-processors</h2>
+    <table>
+    <thead>
+    <tr>
+    <th>Provider</th>
+    <th>Function</th>
+    <th>Data processed</th>
+    <th>Location <code>EU (primary)</code></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Hetzner</td>
+    <td>Virtual machine hosting / compute</td>
+    <td>Workloads and content processed on your VMs</td>
+    <td>Confirm</td>
+    </tr>
+    <tr>
+    <td>UpCloud</td>
+    <td>Virtual machine hosting / compute</td>
+    <td>Workloads and content processed on your VMs</td>
+    <td>Confirm</td>
+    </tr>
+    <tr>
+    <td>Cloudflare (R2)</td>
+    <td>Object storage (files, backups, images)</td>
+    <td>Uploaded files, backups</td>
+    <td>Confirm</td>
+    </tr>
+    </tbody>
+    </table>
+    <h2>Platform / functionality sub-processors</h2>
+    <table>
+    <thead>
+    <tr>
+    <th>Provider</th>
+    <th>Function</th>
+    <th>Data processed</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Soniox</td>
+    <td>Speech-to-text transcription of voice messages</td>
+    <td>Voice recordings you submit</td>
+    </tr>
+    <tr>
+    <td>Voyage AI</td>
+    <td>Text embeddings for search/memory</td>
+    <td>Text content processed for embeddings</td>
+    </tr>
+    <tr>
+    <td>Resend</td>
+    <td>Transactional email (verification, recovery, notifications)</td>
+    <td>Email address, message content</td>
+    </tr>
+    <tr>
+    <td>Apple Push Notification service (APNs)</td>
+    <td>iOS/macOS push delivery</td>
+    <td>Device push token, notification content</td>
+    </tr>
+    <tr>
+    <td>Firebase Cloud Messaging (FCM)</td>
+    <td>Android push delivery</td>
+    <td>Device push token, notification content</td>
+    </tr>
+    <tr>
+    <td>Browser push services (via Web Push / VAPID)</td>
+    <td>Browser/PWA push delivery</td>
+    <td>Push endpoint/keys, notification content</td>
+    </tr>
+    <tr>
+    <td><code>Stripe</code> (planned: Stripe)</td>
+    <td>Payment processing for credit top-ups</td>
+    <td>Payment metadata (no full card numbers stored by Devoku)</td>
+    </tr>
+    </tbody>
+    </table>
+    <blockquote>
+    <p><strong>Not a sub-processor:</strong> Identity/authentication uses <strong>self-hosted Ory Kratos<br />
+    software</strong> running on Devoku's own infrastructure. Credentials are stored in Devoku's<br />
+    database; Ory (the company) does not receive your data.</p>
+    </blockquote>
+    <h2>AI / model providers (enabled by you)</h2>
+    <p>When you enable AI features, your instructions, prompts, and relevant workspace<br />
+    content are transmitted to the tools and model providers <strong>you choose</strong> so they can<br />
+    perform the requested task. Depending on your configuration this may include:</p>
+    <table>
+    <thead>
+    <tr>
+    <th>Category</th>
+    <th>Examples</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Coding tools</td>
+    <td>Cursor, Claude Code, Codex CLI, Qwen Code, Cline</td>
+    </tr>
+    <tr>
+    <td>Model providers</td>
+    <td>OpenAI, Anthropic, Google, xAI, and others you configure</td>
+    </tr>
+    </tbody>
+    </table>
+    <p>These providers act under their own terms and privacy policies. Where this routing is<br />
+    optional, it is governed by the <code>third_party_ai_providers</code> consent category.</p>
+    <h2>Notes for maintaining this list</h2>
+    <ul>
+    <li>Keep this list in sync with the Privacy Policy sub-processor table and the DPA Annex 3.</li>
+    <li>When adding or replacing a sub-processor, follow the notice/objection process in the DPA<br />
+      (<code>30 days</code>).</li>
+    <li>Firebase is used for <strong>push messaging only</strong> (FCM), not analytics or authentication.</li>
+    <li>Ory Kratos is <strong>self-hosted software</strong>, not a third-party processor (see note above).</li>
+    </ul>
+    <div class="footer">
+      <p>&copy; 2026 Coded, UAB. All rights reserved.</p>
+      <p style="margin-top:8px"><a href="/">Legal home</a> · <a href="mailto:support@devoku.com">support@devoku.com</a></p>
+    </div>
+  </div>
+</body>
+</html>
